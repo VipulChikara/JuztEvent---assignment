@@ -1,1 +1,7 @@
-<p>filter works!</p>
+<mat-form-field class="example-form-field">
+    <input #query (keyup)="filter(query.value)" matInput type="text" placeholder="Search Here..." [(ngModel)]="value">
+    <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+    </button>
+    <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>

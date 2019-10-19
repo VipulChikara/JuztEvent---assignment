@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">
+    JuZtEvent - Assignment
+</mat-toolbar>
+<app-filter [products]="products" [filteredProducts]="productsCopy" (filtering)="change($event)"></app-filter>
+<app-product [products]="products"></app-product>

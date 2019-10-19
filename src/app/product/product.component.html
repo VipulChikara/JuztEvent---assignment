@@ -1,1 +1,23 @@
-<p>product works!</p>
+<div class="container">
+  <div class="row">
+    <mat-card *ngFor="let product of products" class="example-card col-md-3 col-sm-12">
+      <mat-card-header style="background:rgba(0,0,0,.06); padding:20px 20px;">
+        <img src="{{product.thumbImageUrl}}" mat-card-avatar class="example-header-image">
+        <mat-card-title>
+          {{product.title}}
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content style="padding:1em;">
+        <p style="text-align:justify">
+         Category :- {{product.category}}
+        </p>
+        <p style="text-align:justify">
+         $ {{product.price}}
+        </p>
+        <p style="text-align:justify">
+          {{product.desc}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
