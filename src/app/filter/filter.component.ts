@@ -13,7 +13,8 @@ export class FilterComponent implements OnInit {
   
   @Output() filtering = new EventEmitter<string>();
 
-  
+  value 
+    
   constructor() { 
   }
 
